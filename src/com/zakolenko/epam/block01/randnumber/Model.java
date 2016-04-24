@@ -37,9 +37,7 @@ public class Model {
      * @return random integer that lies in the specified range
      */
     public int rand() {
-        currentRandMin = RAND_MIN;
-        currentRandMax = RAND_MAX;
-        return new Random().nextInt(RAND_MAX - RAND_MIN + 1) + RAND_MIN;
+        return rand(RAND_MIN, RAND_MAX);
     }
 
     /**
