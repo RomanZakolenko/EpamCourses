@@ -1,6 +1,6 @@
 package com.zakolenko.epam.block02.squareequation;
 
-public class SquareEquation{
+public class SquareEquation {
     private double coefficientA;
     private double coefficientB;
     private double coefficientC;

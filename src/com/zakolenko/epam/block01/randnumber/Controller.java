@@ -25,18 +25,17 @@ public class Controller {
         int userAnswer = 0;
         boolean checkRange;
         do {
-            checkRange = true;
-            while (checkRange) {
+            checkRange = false;
+            while (!checkRange) {
                 userAnswer = inputIntValueWithScanner(scanner);
-                checkRange = userAnswer < model.getCurrentRandMin() || userAnswer > model.getCurrentRandMax();
-                if (checkRange) {
+                checkRange = checkRange(userAnswer);
+                if (!checkRange) {
                     view.printMessage(view.ANSWER_INT + userAnswer);
                     view.printMessage(view.WRONG_DIAPASON);
                 }
                 model.addToNumberOfAttempts(1);
             }
-            view.printMessage(view.ANSWER_INT + userAnswer);
-        } while (!model.guessNumber(userAnswer));
+        } while (!model.compareWithRandNumber(userAnswer));
         view.printMessage(view.USER_WIN);
         view.printMessage(view.NUMBER_OF_ATTEMPTS + model.getNumberOfAttempts());
     }
@@ -56,5 +55,9 @@ public class Controller {
             sc.next();
         }
         return sc.nextInt();
+    }
+
+    public boolean checkRange(int answer) {
+        return answer > model.getCurrentRandMin() && answer < model.getCurrentRandMax();
     }
 }

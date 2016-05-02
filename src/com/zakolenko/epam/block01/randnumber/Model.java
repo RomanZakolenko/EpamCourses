@@ -26,9 +26,9 @@ public class Model {
         if (max < min || min < 0) {
             throw new IllegalArgumentException("wrong range: min = " + min + " , max = " + max);
         }
-        currentRandMin = min;
-        currentRandMax = max;
-        return new Random().nextInt(max - min + 1) + min;
+        this.currentRandMin = min;
+        this.currentRandMax = max;
+        return new Random().nextInt(max - min - 1) + min + 1;
     }
 
     /**
@@ -46,14 +46,14 @@ public class Model {
      * @param number will be compared with random
      * @return true if the number and random are equal, in otherwise false
      */
-    public boolean guessNumber(int number) {
+    public boolean compareWithRandNumber(int number) {
         if (randNumber == number) {
             return true;
         } else {
             if (number < randNumber) {
-                currentRandMin = number + 1;
+                currentRandMin = number;
             } else {
-                currentRandMax = number - 1;
+                currentRandMax = number;
             }
             return false;
         }
@@ -63,24 +63,12 @@ public class Model {
         this.numberOfAttempts += value;
     }
 
-    public int getRandNumber() {
-        return randNumber;
-    }
-
     public int getCurrentRandMax() {
         return currentRandMax;
     }
 
-    public void setCurrentRandMax(int currentRandMax) {
-        this.currentRandMax = currentRandMax;
-    }
-
     public int getCurrentRandMin() {
         return currentRandMin;
-    }
-
-    public void setCurrentRandMin(int currentRandMin) {
-        this.currentRandMin = currentRandMin;
     }
 
     public void setRandNumber(int randNumber) {
@@ -89,9 +77,5 @@ public class Model {
 
     public int getNumberOfAttempts() {
         return numberOfAttempts;
-    }
-
-    public void setNumberOfAttempts(int numberOfAttempts) {
-        this.numberOfAttempts = numberOfAttempts;
     }
 }

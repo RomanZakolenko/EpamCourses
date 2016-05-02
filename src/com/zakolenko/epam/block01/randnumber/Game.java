@@ -1,5 +1,7 @@
 package com.zakolenko.epam.block01.randnumber;
 
+import java.util.Random;
+
 /**
  * @author Roman Zakolenko
  */
