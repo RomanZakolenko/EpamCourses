@@ -1,6 +1,5 @@
-package com.zakolenko.epam.block02.labwork;
+package com.zakolenko.epam.block02.labwork.model;
 
-import com.zakolenko.epam.block02.labwork.model.Model;
 import org.junit.Before;
 import org.junit.Test;
 
