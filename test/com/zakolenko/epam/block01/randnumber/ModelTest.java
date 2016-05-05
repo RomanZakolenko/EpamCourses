@@ -23,5 +23,6 @@ public class ModelTest {
         int rand = 10;
         model.setRandNumber(rand);
         assertTrue(model.compareWithRandNumber(rand));
+        assertFalse(model.compareWithRandNumber(rand + 1));
     }
 }
