@@ -1,6 +1,6 @@
-package com.zakolenko.epam.patterns.state.activecontext;
+package com.zakolenko.epam.patterns.state.example.activecontext;
 
-public class RadioPlus implements Station {
+public class RadioFM implements Station {
 
     @Override
     public void play() {

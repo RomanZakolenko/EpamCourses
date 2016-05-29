@@ -1,4 +1,4 @@
-package com.zakolenko.epam.patterns.state.passivecontext;
+package com.zakolenko.epam.patterns.state.example.passivecontext;
 
 public class WeekEnd implements Activity {
     private int count;

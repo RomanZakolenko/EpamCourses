@@ -1,4 +1,4 @@
-package com.zakolenko.epam.patterns.state.activecontext;
+package com.zakolenko.epam.patterns.state.example.activecontext;
 
 public class Radio {
     private Station station;
