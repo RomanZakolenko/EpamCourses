@@ -1,4 +1,4 @@
-package com.zakolenko.epam.patterns.state.activecontext;
+package com.zakolenko.epam.patterns.state.example.passivecontext;
 
 public class Main {
     public static void main(String[] args) {
