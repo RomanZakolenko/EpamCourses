@@ -6,6 +6,11 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+/**
+ * Contains the configuration object.
+ *
+ * @author Roman Zakolenko
+ */
 public enum Config {
     CONFIG;
 

@@ -7,6 +7,11 @@ import com.zakolenko.epam.project1.view.View;
 
 import java.util.Scanner;
 
+/**
+ * An instance of this class is used to process user actions.
+ *
+ * @author Roman Zakolenko
+ */
 public class UserController {
     private Model model;
     private View view;
@@ -16,6 +21,10 @@ public class UserController {
         this.view = view;
     }
 
+    /**
+     * Prints information about all mobile operators.
+     * Prints number of clients and tariffs all operators.
+     */
     public void printOperatorsInfo() {
         view.printMessage(ViewMessages.COMPANY_CLIENTS_NUMBER, Operator.KYIVSTAR.toString());
         view.printMessage(String.valueOf(model.getNumberOfClients(Operator.KYIVSTAR)));
@@ -27,6 +36,10 @@ public class UserController {
         view.printMessage(String.valueOf(model.sortTariffsByMonthlyPrice(Operator.MTS)));
     }
 
+    /**
+     * Finds the appropriate tariff for the user
+     * over a range of prices that he introduced.
+     */
     public void findTariffByMonthlyPrice() {
         view.printMessage(ViewMessages.SEARCH_TARIFF);
         view.printMessage(ViewMessages.CHOOSE_COMPANY);
@@ -45,9 +58,15 @@ public class UserController {
             }
         }
         view.printMessage(ViewMessages.SUITABLE_TARIFFS);
-        view.printMessage(model.getTariffsByMontlyPrice(Operator.values()[index - 1], min, max).toString());
+        view.printMessage(model.getTariffsByMonthlyPrice(Operator.values()[index - 1], min, max).toString());
     }
 
+    /**
+     * Introduces an integer from the console.
+     *
+     * @param sc used to enter from the console
+     * @return integer entered from the console
+     */
     public int inputIntWithScanner(Scanner sc) {
         while (!sc.hasNextInt()) {
             sc.next();
@@ -55,6 +74,12 @@ public class UserController {
         return sc.nextInt();
     }
 
+    /**
+     * Introduces an double from the console.
+     *
+     * @param sc used to enter from the console
+     * @return double entered from the console
+     */
     public double inputDoubleWithScanner(Scanner sc) {
         while (!sc.hasNextDouble()) {
             sc.next();

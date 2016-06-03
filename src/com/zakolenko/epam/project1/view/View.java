@@ -1,5 +1,10 @@
 package com.zakolenko.epam.project1.view;
 
+/**
+ * An instance of this class is used to represent data.
+ *
+ * @author Roman Zakolenko
+ */
 public class View {
 
     public void printMessage(String message) {
