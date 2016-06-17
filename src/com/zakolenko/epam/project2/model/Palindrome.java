@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * An instance of this class is used for find longest palindrome in specified string.
- * For find longest palindrome used Manaker algorithm.
+ * For find longest palindrome used Manacher algorithm.
  */
 public class Palindrome {
 
