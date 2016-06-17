@@ -2,6 +2,8 @@ package com.zakolenko.epam.project2.model.entity;
 
 /**
  * Abstract class for representing text components.
+ *
+ * @author Roman Zakolenko
  */
 public abstract class TextComponent {
 

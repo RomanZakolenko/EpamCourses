@@ -6,6 +6,8 @@ import java.util.List;
 
 /**
  * This class is used to create a composite structure for the text.
+ *
+ * @author Roman Zakolenko
  */
 public class TextComposite extends TextComponent implements Iterable<TextComponent> {
     private List<TextComponent> components;

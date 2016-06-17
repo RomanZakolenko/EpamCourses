@@ -7,6 +7,8 @@ import java.util.List;
 /**
  * An instance of this class is used for sentence representation.
  * It may contain words, symbols and punctuation marks.
+ *
+ * @author Roman Zakolenko
  */
 public class Sentence extends TextComposite {
     /**

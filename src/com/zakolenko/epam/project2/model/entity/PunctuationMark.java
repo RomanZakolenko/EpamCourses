@@ -6,6 +6,8 @@ import java.util.regex.Pattern;
 
 /**
  * An instance of this class is used for representation punctuation mark.
+ *
+ * @author Roman Zakolenko
  */
 public final class PunctuationMark extends TextLeaf {
     /**

@@ -7,6 +7,8 @@ import java.util.List;
 /**
  * An instance of this class is used for paragraph representation.
  * It may contain sentences, words, symbols and punctuation marks.
+ *
+ * @author Roman Zakolenko
  */
 public class Paragraph extends TextComposite {
 

@@ -13,6 +13,8 @@ import java.util.regex.Pattern;
 /**
  * An instance of this class is used for parsing text
  * in composite structure.
+ *
+ * @author Roman Zakolenko
  */
 public class TextAnalyzer {
     /**

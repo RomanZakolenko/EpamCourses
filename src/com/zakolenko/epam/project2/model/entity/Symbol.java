@@ -5,6 +5,8 @@ import java.util.Map;
 
 /**
  * An instance of this class is used for symbol representation.
+ *
+ * @author Roman Zakolenko
  */
 public final class Symbol extends TextLeaf {
     private static Map<Character, Symbol> symbols = new HashMap<>();

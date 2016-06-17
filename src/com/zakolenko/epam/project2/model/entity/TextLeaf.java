@@ -2,6 +2,8 @@ package com.zakolenko.epam.project2.model.entity;
 
 /**
  * This class is used for representation leaf element of text component.
+ *
+ * @author Roman Zakolenko
  */
 public abstract class TextLeaf extends TextComponent {
     private final char value;

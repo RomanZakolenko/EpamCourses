@@ -8,6 +8,8 @@ import com.zakolenko.epam.project2.view.ViewMessages;
 /**
  * The instance of this class is used to find the maximum palindrome string
  * in a specified text.
+ *
+ * @author Roman Zakolenko
  */
 public class PalindromeController {
     private TextComposite textComposite;

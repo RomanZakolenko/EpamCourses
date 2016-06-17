@@ -9,6 +9,8 @@ import java.util.List;
 
 /**
  * An instance of this class is used for representation code token.
+ *
+ * @author Roman Zakolenko
  */
 public class Token extends TextComposite {
     private static Map<String, Token> tokens = new HashMap<>();

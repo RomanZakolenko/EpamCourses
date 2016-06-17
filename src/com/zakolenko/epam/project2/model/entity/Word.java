@@ -6,6 +6,8 @@ import java.util.List;
 
 /**
  * An instance of this class is used for word representation.
+ *
+ * @author Roman Zakolenko
  */
 public class Word extends TextComposite {
     /**

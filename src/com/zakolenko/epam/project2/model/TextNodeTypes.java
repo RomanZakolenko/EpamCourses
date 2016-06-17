@@ -9,6 +9,7 @@ import java.util.List;
  * This enumeration is used for settings of limitation on possible types
  * of argument in method TextComposite#addComponent(TextComponent).
  *
+ * @author Roman Zakolenko
  * @see TextComposite#addComponent(TextComponent)
  */
 public enum TextNodeTypes {

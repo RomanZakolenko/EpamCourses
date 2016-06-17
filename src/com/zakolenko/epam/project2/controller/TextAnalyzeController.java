@@ -10,6 +10,8 @@ import java.io.FileNotFoundException;
 /**
  * An instance of this class is used for
  * parse the source text in the composite structure.
+ *
+ * @author Roman Zakolenko
  */
 public class TextAnalyzeController {
     private TextAnalyzer textAnalyzer;
