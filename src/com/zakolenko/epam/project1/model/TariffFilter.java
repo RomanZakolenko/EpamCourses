@@ -39,10 +39,10 @@ public class TariffFilter {
      * @return list of filtered tariffs
      */
     public List<? extends Tariff> filter(List<? extends Tariff> tariffs) {
-        List<? extends Tariff> filtered = tariffs.stream().filter(predicate).collect(Collectors.toList());
-        if (nextFilter != null) {
-            return nextFilter.filter(filtered);
-        }
+            List<? extends Tariff> filtered = tariffs.stream().filter(predicate).collect(Collectors.toList());
+            if (nextFilter != null) {
+                return nextFilter.filter(filtered);
+            }
         return filtered;
     }
 }
